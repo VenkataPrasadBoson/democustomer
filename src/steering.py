@@ -26,7 +26,7 @@ from numpy import interp
 #     print("GIVEN INVALID CAN CHANNEL NAME ")
 #     sys.exit()
 
-bus = can.interface.Bus(bustype='socketcan', channel='vcan0', bitrate=1000000)
+bus = can.interface.Bus(bustype='socketcan', channel='can0', bitrate=250000)
 #bus = can.interface.Bus(bustype=bus_type, channel=channel, bitrate=baud_rate)
 
 print("---------------------------------------------------------------")
