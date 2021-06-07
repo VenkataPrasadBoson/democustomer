@@ -14,7 +14,7 @@ import logging
 # paramers for connecting with can , make sure you provided correctly
 
     
-bus = can.interface.Bus(bustype='socketcan', channel='vcan0', bitrate=250000)
+bus = can.interface.Bus(bustype='socketcan', channel='can0', bitrate=250000)
 # bus = can.interface.Bus(bustype=bus_type, channel=channel, bitrate=baud_rate)
 
 
