@@ -12,11 +12,10 @@ def callback(data):
 
 def start():
     global pub
-    pub = rospy.Publisher('/cmd_vel', Twist)
+    pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
     rospy.Subscriber("joy", Joy, callback)
     rospy.init_node('Joy2Turtle')
     rospy.spin()
 
 if __name__ == '__main__':
     start()
-
